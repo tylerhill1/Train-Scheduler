@@ -2,3 +2,27 @@
     text-align: center;
     background-color: burlywood;
 }
+
+.header {
+    background-color: rgb(28, 96, 119);
+    color: white;
+}
+
+.bordered {
+    border: solid;
+    border-color: rgb(28, 96, 119);
+    margin-bottom: 25px;
+}
+
+form {
+    margin: 10px;
+}
+
+table {
+    margin: 21px;
+}
+
+#headerText {
+    margin-top: 11px;
+    margin-left: 10px;
+}
