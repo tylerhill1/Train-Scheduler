@@ -1,6 +1,7 @@
 .jumbotron {
     text-align: center;
-    background-color: burlywood;
+    background-color: rgb(28, 96, 119);
+    color: white;
 }
 
 .header {
