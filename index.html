@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Train Scheduler</title>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Added a link to our external stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+<div class="row">
+    <div class="jumbotron d-flex col-md-12">
+        <div class="container align-items-center">
+            <h1 class="display-4">Train Scheduler</h1>
+            <p class="lead">Cause she has got a ticket to ride</p>
+        </div>
+      </div>
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+        <div class="col-md-12">
+            <p>Current Train Schedule</p>
+        </div>
+</div>
+<div class="row">
+    <table class="table table-striped col-md-12">
+    <thead>
+      <tr>
+        <th scope="col">Train Name</th>
+        <th scope="col">Destination</th>
+        <th scope="col">Frequency (min)</th>
+        <th scope="col">Next Arrival</th>
+        <th scope="col">Minutes Away</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+        <td>test</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td>test</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+        <td>test</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <p>New Train</p>
+    </div>
+ </div>
+<div class="row">
+    <div class="col-md-12">
+        <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="train-name">Train Name</label>
+                <input type="text" class="form-control" id="train-name" placeholder="Hogwarts Express">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="destination">Destination</label>
+                <input type="text" class="form-control" id="destination" placeholder="Hogwarts">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="first-train-time">First Train Time (HH:mm - military time)</label>
+                <input type="text" class="form-control" id="first-train-time">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="frequency">Frequency (min)</label>
+                <input type="text" class="form-control" id="frequency">
+              </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+    
+</div>
+</div>
+
+
+
+    <!-- Added link to the jQuery Library -->
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+
+   <!-- Script -->
+   <script type="text/javascript" src="assets/javascript/scheduler.js"></script>
+</body>
+</html>
