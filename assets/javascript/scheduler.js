@@ -27,6 +27,7 @@ $('#submit').on('click', function(event) {
   var trainFirstTime = $("#first-train-time").val().trim();
   var trainFrequency = $("#frequency").val().trim();
 
+  if (trainName!="" && trainDestination!="" && trainFirstTime!="" && trainFrequency!=""){
   // Code for the push
   database.ref().push({
     name: trainName,
@@ -35,6 +36,14 @@ $('#submit').on('click', function(event) {
     frequency: trainFrequency,
     dateAdded: firebase.database.ServerValue.TIMESTAMP
   });
+
+    }   
+    
+  $("#train-name").val("");
+  $("#destination").val("");
+  $("#first-train-time").val("");
+  $("#frequency").val("");
+
 });
 
 
